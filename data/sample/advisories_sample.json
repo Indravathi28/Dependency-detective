@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "name": "Bundled sample snapshot (OSV format, small subset)",
+    "snapshot_date": "2026-10-24",
+    "note": "Demonstration subset for offline mode. Verify against osv.dev; refresh by running an online scan."
+  },
+  "vulns": [
+    {"id": "GHSA-j8r2-6x86-q33q", "aliases": ["CVE-2023-32681"], "summary": "Unintended leak of Proxy-Authorization header in requests",
+     "database_specific": {"severity": "MODERATE"}, "modified": "2023-06-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "requests"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "2.3.0"}, {"fixed": "2.31.0"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-j8r2-6x86-q33q"}]},
+    {"id": "GHSA-m2qf-hxjv-5gpq", "aliases": ["CVE-2023-30861"], "summary": "Flask vulnerable to possible disclosure of permanent session cookie due to missing Vary: Cookie header",
+     "database_specific": {"severity": "HIGH"}, "modified": "2023-05-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "flask"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "2.2.5"}]}, {"type": "ECOSYSTEM", "events": [{"introduced": "2.3.0"}, {"fixed": "2.3.2"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-m2qf-hxjv-5gpq"}]},
+    {"id": "GHSA-8q59-q68h-6hv4", "aliases": ["CVE-2020-14343"], "summary": "Improper Input Validation in PyYAML (arbitrary code execution via full_load)",
+     "database_specific": {"severity": "CRITICAL"}, "modified": "2021-01-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "pyyaml"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "5.4"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-8q59-q68h-6hv4"}]},
+    {"id": "GHSA-h5c8-rqwp-cp95", "aliases": ["CVE-2024-22195"], "summary": "Jinja2 xmlattr filter allows injection of arbitrary HTML attributes",
+     "database_specific": {"severity": "MODERATE"}, "modified": "2024-01-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "jinja2"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "3.1.3"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-h5c8-rqwp-cp95"}]},
+    {"id": "GHSA-v845-jxx5-vc9f", "aliases": ["CVE-2023-43804"], "summary": "urllib3 Cookie request header isn't stripped during cross-origin redirects",
+     "database_specific": {"severity": "HIGH"}, "modified": "2023-10-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "urllib3"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "1.26.17"}]}, {"type": "ECOSYSTEM", "events": [{"introduced": "2.0.0"}, {"fixed": "2.0.6"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-v845-jxx5-vc9f"}]},
+    {"id": "GHSA-j7hp-h8jx-5ppr", "aliases": ["CVE-2023-4863"], "summary": "Pillow bundled libwebp heap buffer overflow",
+     "database_specific": {"severity": "HIGH"}, "modified": "2023-09-01T00:00:00Z",
+     "affected": [{"package": {"ecosystem": "PyPI", "name": "pillow"}, "ranges": [{"type": "ECOSYSTEM", "events": [{"introduced": "0"}, {"fixed": "10.0.1"}]}]}],
+     "references": [{"type": "ADVISORY", "url": "https://github.com/advisories/GHSA-j7hp-h8jx-5ppr"}]}
+  ]
+}
